@@ -1,0 +1,632 @@
+/* html {
+    scroll-behavior: smooth;   
+} */
+
+/* .tentangkami {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 160px;
+} */
+
+
+/*--------------------------------------------------------------#
+                            Ini CSS Navbar
+--------------------------------------------------------------*/
+.navbar {   
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: Viga;
+    font-size: 15px;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-nav .btn {
+    background-color: yellow;
+}
+
+.navbar-nav .nav-link {
+    font-size: 13px; 
+}
+
+
+
+/*--------------------------------------------------------------#
+                            Ini CSS Jumbotron
+--------------------------------------------------------------*/
+.jumbotron {
+    background-color: rgb(7, 122, 7);
+    background-size: cover;
+    height: 520px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgb(54, 54, 54), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    text-align: center;
+    margin-top: 110px;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 20px;
+}
+
+.jumbotron .lead {
+    color: white;
+    font-weight: 300;
+}
+
+.jumbotron .lead span  {
+    color: yellow;
+}
+
+
+/*--------------------------------------------------------------#
+                        Ini CSS Info Panel
+--------------------------------------------------------------*/
+.info-panel {
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);    
+    border-radius: 12px;
+    margin-top: -100px;
+    padding: 30px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+   font-size: 16px;
+   text-transform: uppercase;
+   font-weight: bold;
+   margin-top: 5px; 
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #757575;
+    margin-top: -5px;
+    font-weight: 500;
+}
+
+
+/*--------------------------------------------------------------#
+                        Ini CSS Workingspace
+--------------------------------------------------------------*/
+.workingspace {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.workingspace h3 {
+    font-size: 30px;
+    font-weight: 200;
+    /* font kapital */
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.workingspace h3 span {
+    font-weight: 500;
+}
+
+.img-fluid {
+    border-radius: 50px;
+}
+
+/* Corporate Profile */
+.corporate-profile {
+    margin-top: 90px;
+}
+
+.corporate-profile .kanankiri {
+    margin-top: 40px;
+    text-align: justify;
+    color: #757575;
+}
+
+/* .testimonial {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.testimonial .figure img {
+    width: 20;
+} */
+
+
+/*--------------------------------------------------------------#
+                        Ini CSS Short Feature Info
+--------------------------------------------------------------*/
+
+.titleinfo {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.titleinfo h2 {
+    font-size: 30px;
+}
+
+.shortfeatureinfo {
+    margin-top: 100px;
+}
+
+    .shortfeatureinfo .shortboxinfo {
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+        transition: all 0.3s ease-in-out;
+        border-radius: 8px;
+        z-index: 1;
+    }
+
+    .shortfeatureinfo .shortboxinfo::before {
+        content: '';
+        position: absolute;
+        background: #cbe0fb;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 100%;
+        transition: all 0.3s;
+        z-index: -1;
+    }
+
+    .shortfeatureinfo .shortboxinfo:hover::before {
+        background: yellow;
+        top: 0;
+        color: white;
+        border-radius: 0px;
+        font-weight: 900;
+    }
+
+    .shortfeatureinfo .shortboxinfo h4 {
+        color: black;
+        margin-top: 20px;
+    }
+
+    .shortfeatureinfo .shortboxinfo a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .shortfeatureinfo .shortboxinfo:hover .title-box a, .deskripsibox {
+        color: black;
+    }
+
+    .shortfeatureinfo .shortboxinfo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 200px;
+    } 
+
+/*--------------------------------------------------------------#
+                            Ini CSS Team
+--------------------------------------------------------------*/
+.team {
+    padding: 60px 0;
+  }
+  
+  .team .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+  }
+  
+  .team .member .member-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+  }
+  
+  .team .member .social a {
+    transition: color 0.3s;
+    color: #222222;
+    margin: 0 3px;
+    padding-top: 7px;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    background: rgba(16, 110, 234, 0.8);
+    display: inline-block;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+  }
+  
+  .team .member .social a:hover {
+    background: #3b8af2;
+  }
+  
+  .team .member .social i {
+    font-size: 18px;
+  }
+  
+  .team .member .member-info {
+    padding: 25px 15px;
+  }
+  
+  .team .member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #222222;
+  }
+  
+  .team .member .member-info span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #aaaaaa;
+  }
+  
+  .team .member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #777777;
+  }
+  
+  .team .member:hover .social {
+    opacity: 1;
+    bottom: 15px;
+  }
+
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 20px;
+    margin: 0;
+    background: #e7f1fd;
+    color: #106eea;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+  }
+  
+  .section-title h3 {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .section-title h3 span {
+    color: #106eea;
+  }
+  
+  .section-title p {
+    margin: 15px auto 0 auto;
+    font-weight: 600;
+  }
+  
+  @media (min-width: 1024px) {
+    .section-title p {
+      width: 50%;
+    }
+  }
+
+
+/*--------------------------------------------------------------#
+                        Ini CSS Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #fff;
+  padding: 0 0 30px 0;
+  color: #444444;
+  font-size: 14px;
+  background: #f1f6fe;
+}
+
+#footer .footer-newsletter {
+  padding: 50px 0;
+  background: #f1f6fe;
+  text-align: center;
+  font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #106eea;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background: #0d58ba;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #fff;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+  font-size: 24px;
+  margin: 0 0 15px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-contact h3 span {
+  color: #106eea;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: black;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #106eea;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #106eea;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #3b8af2;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  text-align: center;
+  float: left;
+}
+
+#footer .credits {
+  float: right;
+  text-align: center;
+  font-size: 13px;
+  color: #444444;
+}
+
+@media (max-width: 768px) {
+  #footer .copyright, #footer .credits {
+    float: none;
+    text-align: center;
+    padding: 2px 0;
+  }
+}
+
+
+
+
+
+/* Utility */
+.tombol {
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 60px;
+    border: 1px yellow;
+}
+
+.tombol:hover {
+    color: black;
+}
+
+.tombol2 {
+    background-color: yellow;
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 1px yellow;   
+    box-shadow: 1px 1px 1px 1px black;   
+}
+
+
+/* DESKTOP VERSION  */
+@media (min-width: 992px) {
+    
+    /* Navbar */
+    .navbar-brand, .nav-link {
+        color: white !important;  
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);      
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right:20px;
+        margin-left: -1px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        color: yellow;
+        border-bottom: 3px solid yellow;
+        width: 30px;
+        margin: auto;
+        padding-bottom: 2px;
+        margin-bottom: -8px;
+    }   
+
+
+    /* Jumbotron */
+    .jumbotron {
+        margin-top: -75px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 500;
+        margin-top: 118px;
+    }
+
+    .jumbotron .lead {
+        color: white;
+        font-weight: 500;
+    }
+
+    /* Workspace */
+    .workingspace {
+        text-align: left;
+    }
+
+    .workingspace h3 {
+        font-size: 52px;
+    }
+
+
+    /* Fitur Info Singkat */
+    .fiturinfosingkat .boxinfosingkat img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Team */
+    .team .member .member-img .img-fluid {
+        height: 250px;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+}
